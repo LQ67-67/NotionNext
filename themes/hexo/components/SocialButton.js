@@ -48,24 +48,6 @@ const SocialButton = () => {
             <i className='transform hover:scale-125 duration-150 fab fa-github dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
-        {CONTACT_TWITTER && (
-          <a
-            target='_blank'
-            rel='noreferrer'
-            title={'twitter'}
-            href={CONTACT_TWITTER}>
-            <i className='transform hover:scale-125 duration-150 fab fa-twitter dark:hover:text-indigo-400 hover:text-indigo-600' />
-          </a>
-        )}
-        {CONTACT_TELEGRAM && (
-          <a
-            target='_blank'
-            rel='noreferrer'
-            href={CONTACT_TELEGRAM}
-            title={'telegram'}>
-            <i className='transform hover:scale-125 duration-150 fab fa-telegram dark:hover:text-indigo-400 hover:text-indigo-600' />
-          </a>
-        )}
         {CONTACT_LINKEDIN && (
           <a
             target='_blank'
@@ -73,15 +55,6 @@ const SocialButton = () => {
             href={CONTACT_LINKEDIN}
             title={'linkIn'}>
             <i className='transform hover:scale-125 duration-150 fab fa-linkedin dark:hover:text-indigo-400 hover:text-indigo-600' />
-          </a>
-        )}
-        {CONTACT_WEIBO && (
-          <a
-            target='_blank'
-            rel='noreferrer'
-            title={'weibo'}
-            href={CONTACT_WEIBO}>
-            <i className='transform hover:scale-125 duration-150 fab fa-weibo dark:hover:text-indigo-400 hover:text-indigo-600' />
           </a>
         )}
         {CONTACT_INSTAGRAM && (
@@ -141,20 +114,6 @@ const SocialButton = () => {
               src='/svg/xiaohongshu.svg'
               alt='小红书'
             />
-          </a>
-        )}
-        {CONTACT_ZHISHIXINGQIU && (
-          <a
-            target='_blank'
-            rel='noreferrer'
-            title={'知识星球'}
-            href={CONTACT_ZHISHIXINGQIU}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className='transform hover:scale-125 duration-150 w-6'
-              src='/svg/zhishixingqiu.svg'
-              alt='知识星球'
-            />{' '}
           </a>
         )}
         {CONTACT_WEHCHAT_PUBLIC && (
