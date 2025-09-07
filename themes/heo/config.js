@@ -4,12 +4,12 @@ const CONFIG = {
 
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2025-09-07', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' },
-    { title: '访问文档中心获取更多帮助', url: 'https://docs.tangly1024.com' }
+    { title: 'Welcome to my blog', url: 'http://notion-next-m80e8v6ll-skims-projects-82fc74fa.vercel.app/' },
+    { title: 'Visit the Documentation Center for more help.', url: 'https://docs.tangly1024.com' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -18,43 +18,40 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'TANGLY1024.COM',
-  HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
-  HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
+  HEO_HERO_TITLE_1: 'Share Programming',
+  HEO_HERO_TITLE_2: 'Cognitive Thinking',
+  HEO_HERO_TITLE_LINK: 'https://notion-next-m80e8v6ll-skims-projects-82fc74fa.vercel.app/',
   // 英雄区遮罩文字
-  HEO_HERO_COVER_TITLE: '随便逛逛',
+  HEO_HERO_COVER_TITLE: 'Just browsing',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HEO_HERO_CATEGORY_1: { title: 'Must-See Picks', url: '/tag/Must-See Picks' },
+  HEO_HERO_CATEGORY_2: { title: 'Popular Articles', url: '/tag/Popular Articles' },
+  HEO_HERO_CATEGORY_3: { title: 'Practical Tutorial', url: '/tag/Practical Tutorial' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
-  HEO_HERO_RECOMMEND_POST_TAG: '推荐',
+  HEO_HERO_RECOMMEND_POST_TAG: 'Recommendation',
   HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
-  //   HERO_RECOMMEND_COVER: 'https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg', // 英雄区右侧图片
+  //   HERO_RECOMMEND_COVER: 'https://store.nintendo.com.hk/media/catalog/product/cache/3be328691086628caca32d01ffcc430a/3/1/310d53445024e23940b65b435298c8d3f0c06140945fd6fc1ceaab72ff748b6f.jpg', // 英雄区右侧图片
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    'Hello! I am Skim 67',
+    '🔍 Sharing and Enthusiastic Helper',
+    '🤝 Specializing in Interaction and Design',
+    '🏃 Down-to-Earth Doer',
+    '🏠 Smart Home Expert',
+    '🤖️ Digital Tech Enthusiast',
+    '🧱 Team Engine'
   ],
 
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
+  HEO_INFO_CARD_URL2: 'https://github.com/LQ67-67',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
-  HEO_INFO_CARD_TEXT3: '了解更多',
+  HEO_INFO_CARD_URL3: 'http://notion-next-m80e8v6ll-skims-projects-82fc74fa.vercel.app/',
+  HEO_INFO_CARD_TEXT3: 'Learn more',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
