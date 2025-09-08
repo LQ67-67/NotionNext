@@ -112,7 +112,7 @@ const CONFIG = {
     }
   ],
 
-  HEO_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
+  HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
   HEO_SOCIAL_CARD_TITLE_1: 'Communication Channel',
   HEO_SOCIAL_CARD_TITLE_2: 'Join our community to discuss and share',
   HEO_SOCIAL_CARD_TITLE_3: 'Click to join the community',
@@ -137,7 +137,7 @@ const CONFIG = {
 
   HEO_POST_LIST_COVER_DEFAULT: true, // 封面为空时用站点背景做默认封面
   HEO_POST_LIST_SUMMARY: true, // 文章摘要
-  HEO_POST_LIST_PREVIEW: false, // 读取文章预览
+  HEO_POST_LIST_PREVIEW: true, // 读取文章预览
   HEO_POST_LIST_IMG_CROSSOVER: true, // 博客列表图片左右交错
 
   HEO_ARTICLE_ADJACENT: true, // 显示上一篇下一篇文章推荐
