@@ -20,7 +20,7 @@ module.exports = {
   FONT_PRELOAD: process.env.NEXT_PUBLIC_FONT_PRELOAD || true,
   FONT_SUBSET: process.env.NEXT_PUBLIC_FONT_SUBSET || 'chinese-simplified',
   // 无衬线字体 例如'"LXGW WenKai"'
-  FONT_SANS: ['-apple-system'
+  FONT_SANS: [
     // '"LXGW WenKai"',
     '"PingFang SC"',
     '-apple-system',
