@@ -44,6 +44,22 @@ const CONFIG = {
     '🧱 Team Engine'
   ],
 
+  //个人资料介绍
+  HEO_PROFILE: {
+    title: "About Me",  // 标题，会显示在个人信息卡片上方
+    content: `
+      <p>👋 Hi, I'm <b>SKim 67</b>! A passionate developer and designer with a focus on UX and digital innovation.I am also a Year 1 student at the University of Southampton.</p>
+      <p>🎯 <b>Core Interests</b>: Web Development, Animations, and Open-Source Collaboration.</p>
+      <p>🌱 <b>Currently Learning</b>: HTML, CSS, JavaScript, Java, Python , C/C++ , Next.js, Three.js, and AI-driven design tools.</p>
+      <p>💬 <b>Ask Me About</b>: How to build interactive blogs, automation scripts, or Discord bots!</p>
+      <p>📫 <b>Contact</b>: <a href="mailto:liuq29310@gmail.com">your-email@example.com</a></p>
+      <p>🔗 <b>Links</b>:
+        <a href="https://github.com/LQ67-67" target="_blank">GitHub</a> |
+        <a href="https://discord.com/users/1298192671709597716" target="_blank">Discord</a>
+      </p>
+    `
+  },
+
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
@@ -113,14 +129,14 @@ const CONFIG = {
   ],
 
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
-  HEO_SOCIAL_CARD_TITLE_1: 'Communication Channel',
-  HEO_SOCIAL_CARD_TITLE_2: 'Join our community to discuss and share',
-  HEO_SOCIAL_CARD_TITLE_3: 'Click to join the community',
-  HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
+  HEO_SOCIAL_CARD_TITLE_1: 'Contact Information',
+  HEO_SOCIAL_CARD_TITLE_2: 'Add my contact information to discuss and share',
+  HEO_SOCIAL_CARD_TITLE_3: 'Click to add me',
+  HEO_SOCIAL_CARD_URL: 'https://discord.com/users/1298192671709597716',
 
   // 底部统计面板文案
-  HEO_POST_COUNT_TITLE: 'Number of articles:',
-  HEO_SITE_TIME_TITLE: 'Website Development Time:',
+  HEO_POST_COUNT_TITLE: 'Articles:',
+  HEO_SITE_TIME_TITLE: 'Web Dev Time:',
   HEO_SITE_VISIT_TITLE: 'Traffic:',
   HEO_SITE_VISITOR_TITLE: 'Number of Visitors:',
 
