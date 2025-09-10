@@ -15,7 +15,7 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Qi Liu', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || 
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 
   'Hello! I am a Year 1 student at the University of Southampton. ' +
   'I currently possess proficiency in HTML, CSS, JavaScript, Java, and Python. ' +
   'I am still diligently studying computer fundamentals. ' +
