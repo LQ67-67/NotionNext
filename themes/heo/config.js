@@ -35,7 +35,7 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    'Hi! I am SKim 67!',
+    'Hi! I am Skim 67!',
     '🔍 Sharing and Enthusiastic Helper',
     '🤝 Specializing in Interaction and Design',
     '🏃 Down-to-Earth Doer',
