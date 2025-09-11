@@ -117,3 +117,11 @@ function GreetingsWords() {
     </div>
   )
 }
+
+{CONFIG.HEO_PROFILE.description && (
+  <div 
+    className="text-sm my-2 text-gray-600 dark:text-gray-300"
+    dangerouslySetInnerHTML={{ __html: CONFIG.HEO_PROFILE.description }}
+  />
+)}
+
