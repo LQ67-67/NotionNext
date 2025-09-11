@@ -53,9 +53,6 @@ const CONFIG = {
       <p>🌱 <b>Currently Learning</b>: HTML, CSS, JavaScript, Java, Python , C/C++ , Next.js, Three.js, and AI-driven design tools.</p>
       <p>💬 <b>Ask Me About</b>: How to build interactive blogs, automation scripts, or Discord bots!</p>
       <p>📫 <b>Contact</b>: <a href="mailto:liuq29310@gmail.com">your-email@example.com</a></p>
-      <p>🔗 <b>Links</b>:
-        <a href="https://github.com/LQ67-67" target="_blank">GitHub</a> |
-        <a href="https://discord.com/users/1298192671709597716" target="_blank">Discord</a>
       </p>
     `
   },
