@@ -124,7 +124,7 @@ const CONFIG = {
 
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
   HEO_SOCIAL_CARD_TITLE_1: 'Contact Information',
-  HEO_SOCIAL_CARD_TITLE_2: 'Add my contact information to discuss and share',
+  HEO_SOCIAL_CARD_TITLE_2: '',
   HEO_SOCIAL_CARD_TITLE_3: 'Click to add me',
   HEO_SOCIAL_CARD_URL: 'https://discord.com/users/1298192671709597716',
 
