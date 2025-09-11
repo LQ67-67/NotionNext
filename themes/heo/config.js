@@ -47,14 +47,6 @@ const CONFIG = {
   //个人资料介绍
   HEO_PROFILE: {
     title: "About Me",  // 标题，会显示在个人信息卡片上方
-    `
-      <p>👋 Hi, I'm <b>SKim 67</b>! A passionate developer and designer with a focus on UX and digital innovation.I am also a Year 1 student at the University of Southampton.</p>
-      <p>🎯 <b>Core Interests</b>: Web Development, Animations, and Open-Source Collaboration.</p>
-      <p>🌱 <b>Currently Learning</b>: HTML, CSS, JavaScript, Java, Python , C/C++ , Next.js, Three.js, and AI-driven design tools.</p>
-      <p>💬 <b>Ask Me About</b>: How to build interactive blogs, automation scripts, or Discord bots!</p>
-      <p>📫 <b>Contact</b>: <a href="mailto:liuq29310@gmail.com">your-email@example.com</a></p>
-      </p>
-    `
   },
 
   // 个人资料底部按钮
