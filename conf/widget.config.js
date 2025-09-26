@@ -44,7 +44,7 @@ module.exports = {
         'https://p2.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
     },
     {
-      name: '王都グランセル',
+      name: '王都グランセル', //水星领航员
       artist: 'Falcom Sound Team jdk',
       url: '8015.mp3',  //https://music.163.com/song/media/outer/url?id=731355.mp3
       cover:
