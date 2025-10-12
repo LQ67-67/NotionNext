@@ -46,7 +46,7 @@ module.exports = {
     {
       name: '水星领航员', // 原版:王都グランセル
       artist: 'Undine', //http://m3.130v.com:9888/qyy_mp3/8015.mp3
-      url: 'https://github.com/LQ67-67/NotionNext/blob/main/conf/8015.mp3',  //https://music.163.com/song/media/outer/url?id=731355.mp3
+      url: 'https://raw.githubusercontent.com/LQ67-67/NotionNext/blob/main/conf/8015.mp3',  //https://music.163.com/song/media/outer/url?id=731355.mp3
       cover: 'https://lh3.googleusercontent.com/proxy/OiGOtjpXRA_LiYoySYCq-TOyn1cPnF2LNqIGrQiQFpQWzMYuju8gtzyEN1u6iley-IeHOw'
     }
   ],
