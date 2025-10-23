@@ -16,11 +16,6 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Qi Liu', // 您的昵称 例如 tangly1024
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 
-  'Hello! I am a Year 1 student at the University of Southampton. ' +
-  'I currently possess proficiency in HTML, CSS, JavaScript, Java, and Python. ' +
-  'I am still diligently studying computer fundamentals. ' +
-  'I would greatly appreciate your valuable feedback if you are interested. 🚀',// 作者简介
   CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || 'https://github.com/LQ67-67', // 你的github个人主页 例如 https://github.com/tangly1024
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://skim67.vercel.app/', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, Blog, liuqi, blog, notion, southampton', // 网站关键词 英文逗号隔开
