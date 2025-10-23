@@ -44,6 +44,16 @@ const CONFIG = {
     '🧱 Team Engine'
   ],
 
+   //个人资料介绍
+  HEO_PROFILE: {
+    title: "About Me",  // 标题，会显示在个人信息卡片上方
+    description: `
+    <p>Hello! I'm a Year 1 student passionate about programming and design.</p>
+    <p>🌿 Interests: Web Dev, UX Design, Games</p>
+    <p>🎯 Goals: Building open-source tools to help others learn</p>
+    `,
+  },
+
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
