@@ -8,7 +8,7 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: 'Welcome to my blog 🎉', url: 'https://notion-next-m80e8v6ll-skims-projects-82fc74fa.vercel.app/' },
+    { title: 'Welcome to my blog 🎉', url: 'https://www.liuqi.cc/' },
     { title: 'Visit my GitHub for more help 🥳', url: 'https://github.com/LQ67-67' }
   ],
 
