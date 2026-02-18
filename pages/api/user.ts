@@ -1,4 +1,3 @@
-import { getAuth } from '@clerk/nextjs/server'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 /**
@@ -7,18 +6,20 @@ import type { NextApiRequest, NextApiResponse } from 'next'
  * @param res
  * @returns
  */
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  try {
-    const { userId } = getAuth(req)
-
-    if (!userId) {
-      return res.status(401).json({ error: 'Unauthorized' })
-    }
-
-    // Retrieve data from your database
-    res.status(200).json({ userId })
-  } catch (error) {
-    console.error(error)
-    res.status(500).json({ error: 'Internal Server Error' })
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // 如果没有配置 Clerk 相关环境变量，返回错误
+  if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+    return res.status(401).json({ error: 'Unauthorized - Clerk not configured' })
   }
+
+  // 静态导入 Clerk getAuth - 当 Clerk 未配置时会被 webpack 替换为 mock
+  const { getAuth } = await import('@clerk/nextjs/server')
+  const { userId } = getAuth(req)
+
+  if (!userId) {
+    return res.status(401).json({ error: 'Unauthorized' })
+  }
+
+  // Retrieve data from your database
+  res.status(200).json({ userId })
 }

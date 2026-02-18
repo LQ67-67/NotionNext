@@ -1,4 +1,8 @@
-import { UserProfile } from '@clerk/nextjs'
+import dynamic from 'next/dynamic'
+
+const UserProfile = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  ? dynamic(() => import('@clerk/nextjs').then(m => m.UserProfile))
+  : null
 /**
  * 控制台用户账号面板
  * @returns

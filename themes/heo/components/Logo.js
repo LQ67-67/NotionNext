@@ -9,7 +9,7 @@ const Logo = props => {
     <SmartLink href='/' passHref legacyBehavior>
       <div className='flex flex-nowrap items-center cursor-pointer font-extrabold'>
         <LazyImage
-          src={siteInfo?.icon}
+          src={siteInfo?.icon?.replace?.('width=400', 'width=280') || siteInfo?.icon}
           width={24}
           height={24}
           alt={siteConfig('AUTHOR')}

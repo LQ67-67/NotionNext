@@ -1,4 +1,8 @@
-import { SignOutButton } from '@clerk/nextjs'
+import dynamic from 'next/dynamic'
+
+const SignOutButton = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  ? dynamic(() => import('@clerk/nextjs').then(m => m.SignOutButton))
+  : null
 /**
  * 控制台登出按钮
  * @returns

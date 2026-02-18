@@ -319,6 +319,12 @@ const nextConfig = {
       'node_modules'
     ]
 
+    // 如果没有配置 Clerk，使用 mock 模块替代
+    if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+      config.resolve.alias['@clerk/nextjs'] = path.resolve(__dirname, 'lib/mock-modules/@clerk/nextjs/index.js')
+      config.resolve.alias['@clerk/nextjs/server'] = path.resolve(__dirname, 'lib/mock-modules/@clerk/nextjs/server.js')
+    }
+
     return config
   },
   experimental: {
