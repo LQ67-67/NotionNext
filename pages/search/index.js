@@ -47,6 +47,25 @@ export async function getStaticProps({ locale }) {
   props.posts = allPages?.filter(
     page => page.type === 'Post' && page.status === 'Published'
   )
+
+  // 清理不必要的数据以减少传输大小
+  delete props.allPages
+  delete props.allNavPages
+  delete props.latestPosts
+  delete props.customNav
+  delete props.customMenu
+  delete props.categoryOptions
+  delete props.tagOptions
+  delete props.collection
+  delete props.collectionQuery
+  delete props.collectionId
+  delete props.collectionView
+  delete props.block
+  delete props.schema
+  delete props.rawMetadata
+  delete props.pageIds
+  delete props.viewIds
+
   return {
     props,
     revalidate: process.env.EXPORT
