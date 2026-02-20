@@ -35,11 +35,31 @@ export async function getStaticProps({ params: { keyword }, locale }) {
 
   // 处理分页
   if (POST_LIST_STYLE === 'scroll') {
-    // 滚动列表默认给前端返回所有数据
+    // 滚动列表限制最多50条以控制数据大小
+    props.posts = props.posts?.slice(0, 50)
   } else if (POST_LIST_STYLE) {
     props.posts = props.posts?.slice(0, POSTS_PER_PAGE)
   }
   props.keyword = keyword
+
+  // 清理不必要的数据以减少页面数据大小
+  delete props.allPages
+  delete props.allNavPages
+  delete props.latestPosts
+  delete props.customNav
+  delete props.customMenu
+  delete props.categoryOptions
+  delete props.tagOptions
+  delete props.collection
+  delete props.collectionQuery
+  delete props.collectionId
+  delete props.collectionView
+  delete props.block
+  delete props.schema
+  delete props.rawMetadata
+  delete props.pageIds
+  delete props.viewIds
+
   return {
     props,
     revalidate: process.env.EXPORT
@@ -104,6 +124,11 @@ async function filterByMemCache(allPosts, keyword) {
     if (hit) {
       // 清理 results 数组以减少数据大小
       delete post.results
+      // 清理不必要的大字段
+      delete post.blockMap
+      delete post.content
+      delete post.toc
+      delete post.ext
       filterPosts.push(post)
     }
   }
