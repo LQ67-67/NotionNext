@@ -72,13 +72,7 @@ const Slug = props => {
     if (lock) {
       return
     }
-    // 文章解锁后生成目录与内容
-    if (post?.blockMap?.block) {
-      post.content = Object.keys(post.blockMap.block).filter(
-        key => post.blockMap.block[key]?.value?.parent_id === post.id
-      )
-      post.toc = getPageTableOfContents(post, post.blockMap)
-    }
+    // toc 和 content 已经在服务端生成，无需客户端重新计算
   }, [router, lock])
 
   props = { ...props, lock, validPassword }

@@ -82,8 +82,7 @@ async function filterByMemCache(allPosts, keyword) {
     const articleInfo = post.title + post.summary + tagContent + categoryContent
     let hit = articleInfo.toLowerCase().indexOf(keyword) > -1
     const contentTextList = getPageContentText(post, page)
-    // console.log('全文搜索缓存', cacheKey, page != null)
-    post.results = []
+    // 只检查是否命中，不存储完整结果
     let hitCount = 0
     for (const i of contentTextList) {
       const c = contentTextList[i]
@@ -94,15 +93,24 @@ async function filterByMemCache(allPosts, keyword) {
       if (index > -1) {
         hit = true
         hitCount += 1
-        post.results.push(c)
-      } else {
-        if ((post.results.length - 1) / hitCount < 3 || i === 0) {
-          post.results.push(c)
-        }
       }
     }
     if (hit) {
-      filterPosts.push(post)
+      // 只保留搜索结果所需的字段
+      filterPosts.push({
+        id: post.id,
+        title: post.title,
+        summary: post.summary,
+        slug: post.slug,
+        pageCoverThumbnail: post.pageCoverThumbnail,
+        publishDate: post.publishDate,
+        lastEditedDate: post.lastEditedDate,
+        category: post.category,
+        tags: post.tags,
+        type: post.type,
+        status: post.status,
+        hitCount: hitCount
+      })
     }
   }
   return filterPosts
