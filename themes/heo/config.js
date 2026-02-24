@@ -24,7 +24,7 @@ const CONFIG = {
   HEO_HERO_COVER_TITLE: 'Learn More',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: 'Must-See Picks', url: '/tag/Must-See Picks' },
+  HEO_HERO_CATEGORY_1: { title: 'Recommended', url: '/tag/Recommended' },
   HEO_HERO_CATEGORY_2: { title: 'Popular Articles', url: '/tag/Popular Articles' },
   HEO_HERO_CATEGORY_3: { title: 'Practical Tutorial', url: '/tag/Practical Tutorial' },
 
