@@ -2,7 +2,8 @@
 
 > 基于 [NotionNext](https://github.com/notionnext-org/NotionNext) 构建的个人博客与作品集，内容在 Notion 中管理，一键发布为独立站。
 
-🌐 **在线访问**：(https://liuqi.cc)  & (https://skim67.vercel.app)
+🌐 **在线访问**：(https://liuqi.cc)   &  (https://skim67.vercel.app)
+
 📚 **内容源**：[公开的 Notion 数据库（可选）](https://notion.so/...)
 
 ---
@@ -23,21 +24,7 @@
 - 样式：Tailwind CSS
 - 内容：Notion API (react-notion-x)
 - 部署：Vercel（自动持续集成）
-- 评论：Giscus / Twikoo（看你实际配置）
-
----
-
-## 📂 目录结构
-
-.
-├── blog # 博客相关配置
-├── components # 通用组件
-├── lib # Notion API 封装
-├── pages # Next.js 页面
-├── public # 静态资源
-├── styles # 全局样式
-└── theme # 主题配置
-
+- 评论：Giscus / Cusdis / Utterance
 
 ---
 
