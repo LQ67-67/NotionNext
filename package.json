@@ -103,6 +103,7 @@
     "@ai-sdk/vue": "^4.0.92",
     "@lhci/cli": "^0.15.1",
     "@netlify/plugin-nextjs": "^5.15.13",
+    "@opennextjs/cloudflare": "^1.0.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.6.7",
@@ -137,6 +138,7 @@
     "vitepress": "^1.6.3",
     "vitepress-chat": "^0.0.5",
     "webpack-bundle-analyzer": "^4.5.0",
+    "wrangler": "^3.99.0",
     "zod": "^4.5.4"
   },
   "resolutions": {
