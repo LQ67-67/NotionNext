@@ -1,177 +1,100 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/c111204d-2016-4343-92e4-83357cac4b19" width="96" height="96" alt="NotionNext Logo" />
+# 🪐 Skim's Blog · liuqi.cc
 
-# NotionNext
+**A Notion-powered personal blog — write in Notion, publish as a standalone site in one click.**
 
-Build an independent website from Notion.
+This repository is a customized fork of [NotionNext](https://github.com/notionnext-org/NotionNext). All content is managed in Notion, rendered into a high-performance static site with Next.js, and deployed on Vercel.
 
-Keep writing in Notion, and publish your content as a blog, portfolio, knowledge base, directory, or product website.
+[![liuqi.cc](https://img.shields.io/badge/🌐-liuqi.cc-2563eb?style=for-the-badge&logo=googlechrome)](https://liuqi.cc)
+[![Vercel](https://img.shields.io/badge/⚡-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![GitHub](https://img.shields.io/badge/GitHub-LQ67-67-181717?style=for-the-badge&logo=github)](https://github.com/LQ67-67)
+[![RSS](https://img.shields.io/badge/RSS-Feed-f4404c?style=for-the-badge&logo=rss)](https://www.liuqi.cc/rss/feed.xml)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 
-<p>
-  <a href="https://preview.tangly1024.com/">Live Preview</a>
-  ·
-  <a href="https://notionnext.tangly1024.com/user-guide/start-here">Get Started</a>
-  ·
-  <a href="https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG">Themes</a>
-  ·
-  <a href="https://notionnext.tangly1024.com/user-guide/showcase">Showcase</a>
-  ·
-  <a href="https://notionnext.tangly1024.com/">Docs</a>
-  ·
-  <a href="https://github.com/notionnext-org/NotionNext/discussions">Discussions</a>
-</p>
-
-<p>
-  <a aria-label="GitHub commit activity" href="https://github.com/notionnext-org/NotionNext/commits/main" title="GitHub commit activity">
-    <img src="https://img.shields.io/github/commit-activity/m/notionnext-org/NotionNext?style=for-the-badge"/>
-  </a>
-  <a aria-label="GitHub contributors" href="https://github.com/notionnext-org/NotionNext/graphs/contributors" title="GitHub contributors">
-    <img src="https://img.shields.io/github/contributors/notionnext-org/NotionNext?color=orange&style=for-the-badge"/>
-  </a>
-  <a aria-label="Build status" href="#" title="Build status">
-    <img src="https://img.shields.io/github/deployments/notionnext-org/NotionNext/Production?logo=Vercel&style=for-the-badge"/>
-  </a>
-  <a aria-label="Powered by Vercel" href="https://vercel.com?utm_source=Craigary&utm_campaign=oss" title="Powered by Vercel">
-    <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" height="28"/>
-  </a>
-</p>
-
-[中文](./README.md) | English
+中文 → [README.md](./README.md)
 
 </div>
 
 ---
 
-## What Is NotionNext?
+## ✨ Overview
 
-NotionNext is an open-source website system built with **Next.js + Notion API**. You keep managing posts, categories, tags, menus, and pages in Notion. NotionNext turns that content into an independent website that can be visited, searched, customized, and operated over the long term.
+> *“Writing in Notion, publishing in one click.”*
 
-It is useful for creators, indie hackers, designers, photographers, course authors, open-source maintainers, and small teams that want a fast website for content, docs, portfolios, or product pages.
+`liuqi.cc` is the personal blog and portfolio of Skim (Qi Liu) — technical notes, life in the making, and project write-ups. Everything is authored in Notion and stays in sync with the live site automatically.
 
-## What Can You Build?
+- **Custom domain**: [liuqi.cc](https://liuqi.cc)
+- **Mirror deployment**: [skim67.vercel.app](https://skim67.vercel.app)
+- **RSS subscription**: [rss/feed.xml](https://www.liuqi.cc/rss/feed.xml) (full-content feed)
+- **Sitemap**: [sitemap.xml](https://www.liuqi.cc/sitemap.xml)
+- **About**: [liuqi.cc/aboutme](https://liuqi.cc/aboutme)
 
-| Goal | Recommended Entry | Best For |
+## 🎨 Theme & Experience
+
+- **EndSpace theme**: a minimal, restrained visual style that keeps the focus on content; dark mode by default, with automatic light/dark switching by time of day.
+- **Responsive everywhere**: a tuned browsing experience on mobile, tablet, and desktop.
+- **Multimedia touches**: background music player, typewriter greetings, Prism code highlighting, and other small details that make reading pleasant.
+- **Reader interaction**: pluggable comment systems (Giscus / Cusdis / Utterances) turn posts into conversations.
+- **Discoverability**: full-text search plus tag, category, and archive timelines to browse the whole archive from any angle.
+
+## 🏗 Tech Stack
+
+| Layer | Choice | Notes |
 | --- | --- | --- |
-| Personal blog | [Get started](https://notionnext.tangly1024.com/user-guide/start-here) | Writers, developers, students |
-| Portfolio or personal brand | [Choose a theme by use case](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG) | Designers, photographers, freelancers |
-| Product website or SaaS landing page | [Starter / Landing / Proxio](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG) | Indie products, startups, small teams |
-| Knowledge base or docs site | [GitBook / Claude](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG) | Open-source projects, course authors, teams |
-| Directory or resource hub | [Nav theme](https://notionnext.tangly1024.com/user-guide/themes/nav) | Curators and community operators |
+| Framework | Next.js (React) + TypeScript | Hybrid SSR/ISR, SSG-first |
+| Styling | Tailwind CSS | Utility-first CSS; themes as plugins |
+| Content source | Notion API (`@notionhq/client`) | Posts, categories, tags, and menus live in Notion |
+| Incremental cache | ISR (60 s revalidation) | No repeated Notion fetches per visit; updates propagate quickly |
+| Deployment | Vercel CI/CD | Build on push, custom domain out of the box |
+| Observability | Vercel Analytics | Anonymous, privacy-friendly stats |
+| Subscription | RSS (full-content) | Standard feed, compatible with any reader |
 
-## Why NotionNext?
+**Configuration**: site behavior is consolidated in [blog.config.js](./blog.config.js) and the `conf/` directory (comments, analytics, images, fonts, animations, performance, and more). Every sensitive value can be overridden via environment variables, keeping config cleanly decoupled from code.
 
-- **Keep using Notion**: posts, categories, tags, covers, menus, and pages stay in Notion.
-- **Short path to launch**: duplicate the Notion template, fork the repository, connect Vercel, and deploy.
-- **Many built-in themes**: 26 themes for blogs, docs, portfolios, product sites, galleries, and directories.
-- **Built for long-term operation**: custom domains, SEO, Sitemap, RSS, comments, analytics, search, ads, and email subscription.
-- **Open-source and controllable**: source code, configuration, and themes live in your own repository.
-- **Clear data path**: Notion stores the content, the website handles publishing, and future migration remains possible.
-
-## 20-Minute Deployment Path
-
-1. Open the [theme preview site](https://preview.tangly1024.com/) and choose the site style you want.
-2. Duplicate the official NotionNext Notion template.
-3. Fork this repository to your GitHub account.
-4. Deploy with [Vercel](https://notionnext.tangly1024.com/user-guide/deploy-vercel).
-5. Set `NOTION_PAGE_ID` and other required environment variables.
-6. After launch, configure your theme, domain, comments, analytics, and search as needed.
-
-New users should start with the [Get Started guide](https://notionnext.tangly1024.com/user-guide/start-here).
-
-## Themes
-
-- Live theme switcher: [preview.tangly1024.com](https://preview.tangly1024.com/)
-- Built-in themes: [Themes catalog](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG)
-- Theme docs in this repository: [docs/user-guide/themes/](./docs/user-guide/themes/)
-
-| Use Case | Start With |
-| --- | --- |
-| Personal blog | `simple`, `hexo`, `nobelium`, `typography` |
-| Docs / knowledge base | `gitbook`, `claude`, `thoughtlite` |
-| Portfolio / personal brand | `opc`, `proxio`, `starter`, `landing` |
-| Product website | `starter`, `landing`, `commerce` |
-| Photo / visual content | `photo`, `plog`, `magzine` |
-| Directory | `nav` |
-
-## Local Development
-
-Use Node 22 and Yarn 1. Node 20 cannot install the current dependency set because `@ai-sdk/google` requires Node >=22.
+## 🖥 Local Development
 
 ```bash
-nvm use || nvm install
-npm i -g yarn
-yarn
+# 1. Install dependencies (Node >= 22, Yarn 1)
+yarn install --frozen-lockfile
+
+# 2. Configure environment variables
+cp .env.example .env    # fill in NOTION_TOKEN / NOTION_PAGE_ID, etc.
+
+# 3. Start the dev server
 yarn dev
 ```
 
-Common commands:
-
 | Command | Purpose |
 | --- | --- |
-| `yarn dev` | Start local development |
-| `yarn build` | Build for production |
-| `yarn export` | Static export |
-| `yarn docs:site:dev` | Preview the docs site locally |
-| `yarn docs:site:build` | Build the docs site |
+| `yarn dev` | Start the dev server with hot reload |
+| `yarn build` | Production build (CI mode) |
+| `yarn test` | Run the Jest test suite |
+| `yarn lint:fix` / `yarn format` | Auto-fix linting and format code |
+| `yarn type-check` | TypeScript type checking |
+| `yarn post-build` | Generate sitemap.xml |
 
-## Documentation
+## 📣 Social & Contact
 
-| Content | Link |
+| Platform | Link |
 | --- | --- |
-| Docs site | [notionnext.tangly1024.com](https://notionnext.tangly1024.com) |
-| New user guide | [Get started](https://notionnext.tangly1024.com/user-guide/start-here) |
-| Use-case templates | [Choose by goal](https://notionnext.tangly1024.com/user-guide/templates) |
-| Configuration index | [Features and configuration](https://notionnext.tangly1024.com/user-guide/reference/features) |
-| Theme docs | [26 built-in themes](https://notionnext.tangly1024.com/user-guide/themes/THEMES_CATALOG) |
-| Showcase | [User websites](https://notionnext.tangly1024.com/user-guide/showcase): submit your site after launch |
-| Docs source | [docs/](./docs/) |
+| GitHub | [LQ67-67](https://github.com/LQ67-67) |
+| X / Twitter | [@67_skim](https://x.com/67_skim) |
+| LinkedIn | [Qi Liu](https://www.linkedin.com/in/qiliu6677/) |
+| Bilibili | [37369151](https://space.bilibili.com/37369151) |
+| YouTube | [@Skim-67](https://www.youtube.com/@Skim-67) |
+| Instagram | [@67_liu_qi](https://www.instagram.com/67_liu_qi) |
+| More work | [bluer.site](https://www.bluer.site) |
 
-## Community
+## 📄 Acknowledgements & License
 
-The canonical repository is maintained by [notionnext-org](https://github.com/notionnext-org). Contributions to code, docs, themes, issues, reviews, and discussions are welcome.
+- Built on [NotionNext](https://github.com/notionnext-org/NotionNext) (MIT) — thanks to the original author [tangly1024](https://github.com/tangly1024) and community contributors.
+- Site content is owned by the author; code is released under the [MIT License](./LICENSE).
 
-| Content | Link |
-| --- | --- |
-| Community guide | [community-participate.md](./docs/user-guide/community-participate.md) |
-| Vision and roadmap | [VISION_ROADMAP.md](./docs/developer/VISION_ROADMAP.md) |
-| Contributing | [CONTRIBUTING.md](./CONTRIBUTING.md) |
-| Governance | [GOVERNANCE.md](./GOVERNANCE.md) |
-| Maintainers | [MAINTAINERS.md](./MAINTAINERS.md) |
-| Code of Conduct | [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) |
-| Discussions | [GitHub Discussions](https://github.com/notionnext-org/NotionNext/discussions) |
+MIT © [LQ67-67](https://github.com/LQ67-67)
 
-If you cloned from the old repository before the transfer, update your remote:
+<div align="center">
 
-```bash
-git remote set-url origin https://github.com/notionnext-org/NotionNext.git
-git remote -v
-```
+**Write in Notion, publish with Next.js — focus on the content, let the tooling handle the rest.**
 
-## Tech Stack
-
-- **Framework**: [Next.js](https://nextjs.org)
-- **Styles**: [Tailwind CSS](https://tailwindcss.com/)
-- **Rendering**: [react-notion-x](https://github.com/NotionX/react-notion-x)
-- **Comments**: Twikoo, Giscus, Gitalk, Cusdis, Utterances
-- **Deployment**: [Vercel](https://vercel.com)
-
-## Acknowledgements
-
-Special thanks to Craig Hart for initiating the Nobelium project.
-
-<table><tr align="left">
-  <td align="center"><a href="https://github.com/craigary" title="Craig Hart"><img src="https://avatars.githubusercontent.com/u/10571717" width="64px;" alt="Craig Hart"/></a><br/><a href="https://github.com/craigary" title="Craig Hart">Craig Hart</a></td>
-</tr></table>
-
-Thanks to everyone who contributes code, themes, docs, issues, reviews, and release maintenance.
-
-[![Contributors](https://contrib.rocks/image?repo=notionnext-org/NotionNext)](https://github.com/notionnext-org/NotionNext/graphs/contributors)
-
-## Usage Statement
-
-This project is free and open source. Use it for personal learning and lawful website publishing. Do not use it to publish illegal content or conduct unlawful activities.
-
-## License
-
-The MIT License.
+</div>
