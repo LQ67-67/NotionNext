@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪐 Skim's Blog · liuqi.cc
+# 📝 Skim's Blog · liuqi.cc
 
 **一个由 Notion 驱动的独立博客 —— 在 Notion 中写作，一键发布为个人站点。**
 
@@ -8,7 +8,6 @@
 
 [![liuqi.cc](https://img.shields.io/badge/🌐-liuqi.cc-2563eb?style=for-the-badge&logo=googlechrome)](https://liuqi.cc)
 [![Vercel](https://img.shields.io/badge/⚡-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
-[![GitHub](https://img.shields.io/badge/GitHub-LQ67-67-181717?style=for-the-badge&logo=github)](https://github.com/LQ67-67)
 [![RSS](https://img.shields.io/badge/RSS-Feed-f4404c?style=for-the-badge&logo=rss)](https://www.liuqi.cc/rss/feed.xml)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 
